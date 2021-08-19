@@ -14,7 +14,8 @@ window.addEventListener('load', () => {
 
 
         function yorituvchiCups(index){
-            if(smallCups[index].classList.contains('full') && !smallCups[index].nextElementSibling.classList.contains('full')) {
+            const a = smallCups[index].classList.contains('full');
+            if(a && !smallCups[index].nextElementSibling.classList.contains('full')) {
                 index--;
             }
 
