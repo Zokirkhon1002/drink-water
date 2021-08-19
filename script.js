@@ -14,9 +14,7 @@ window.addEventListener('load', () => {
 
 
         function yorituvchiCups(index){
-            const a = smallCups[index].classList.contains('full');
-            const b = !smallCups[index].nextElementSibling.classList.contains('full');
-            if(a && b){
+            if(smallCups[index].classList.contains('full') && !smallCups[index].nextElementSibling.classList.contains('full')) {
                 index--;
             }
 
@@ -54,15 +52,6 @@ window.addEventListener('load', () => {
 
 
 
-
-            console.log(fullCups);
-            console.log(totalCups);
         }
         
-
-
-    console.log(smallCups);
-    console.log(liters);
-    console.log(percentage);
-    console.log(remained);
 })
